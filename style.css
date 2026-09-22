@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.enchantment-list {
+    display: inline-block;
+    padding: 16px;
+    border: 1px solid black;
+    list-style: none;
+}
+
+.enchantment-name{
+    color: blue;
+}
+.enchantment-name.ultimate-enchantment{
+    color: purple;
+}
+li>span {
+    font-weight: bold;
+}
