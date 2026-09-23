@@ -1,6 +1,6 @@
 const inBlocksPerSecond = document.querySelector('#in-blocks-per-second');
 
-inBlocksPerSecond.addEventListener('change', (e) => {
+inBlocksPerSecond.addEventListener('input', (e) => {
     const outBlocksPerSecond = document.querySelector('.out-blocks-per-second');
     outBlocksPerSecond.textContent = inBlocksPerSecond.value;
 
@@ -51,4 +51,4 @@ const updateCropFeverList = () => {
     })
 }
 
-inBlocksPerSecond.dispatchEvent(new Event('change'))
+inBlocksPerSecond.dispatchEvent(new Event('input'))
